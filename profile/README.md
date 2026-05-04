@@ -1,0 +1,65 @@
+# RAXAR SOLUTIONS S.L.
+
+> **Premium AI Consulting · B2B + B2C** · *Del Caos al Éxito*
+
+Algeciras, España · [raxar.es](https://raxar.es) · [contacto@raxar.es](mailto:contacto@raxar.es)
+
+---
+
+## What we do
+
+We design and operate **autonomous AI agent platforms** for SMBs and enterprises. We don't sell hours; we sell systems that run themselves.
+
+- 🧠 **FENIX** — AI dashboard + 11 productos (ARIA · Atlas Pro · Hermes · SOLVA · Oracle · Sentinel · Radar · Pulse-CV · 4 partners) live serving real customers.
+- 🤖 **n8n orchestration** — 39 production workflows · 99.99% success rate · errorWorkflow + executionTimeout 100% compliance · multi-tenant RLS-isolated.
+- 🛡️ **Self-hosted privacy** — On-premise LLM routing via LiteLLM Proxy (11 providers) + Ollama torre (9 models · 96 GB) · EU residency policy enforced · GDPR Art. 5 compliant.
+- 📊 **Observability** — VIGIA torre (20 signals) + LLM cost tracking + GlitchTip + Uptime Kuma + activity_log audit trail.
+
+## Stack at a glance
+
+```
+Frontend         Next.js 16 · Tailwind v4 · React 19
+Backend          Node.js 24 · Python 3.12 · FastAPI · LangGraph
+Database         PostgreSQL 16 · 115 fenix tables · 100% RLS coverage
+LLM Router       LiteLLM Proxy · Anthropic · Groq · Gemini · DeepSeek · Together · OpenRouter · Ollama torre
+Vector Store     Qdrant (5 collections · raxar-help-center · oracle · ARIA RAG · Atlas Pro)
+Orchestration    n8n v2.17 · Temporal.io (roadmap)
+Infra            Coolify v4 · Docker · Hostinger VPS · Tailscale mesh
+Compliance       SOC 2 (mindset · vendor S269+) · GDPR · AI Act CV Manager assessment
+```
+
+## Compliance + security
+
+- **GDPR**: 9 RGPD docs · DSR pipeline E2E live (1m34s historical resolution)
+- **AI Act EU**: CV Manager HIGH-RISK assessment v1.0 · production gate enforced
+- **Headers**: 7/7 strong (CSP · HSTS preload · frame DENY · nosniff · XSS · Referrer · Permissions)
+- **Webhooks**: HMAC dual-mode · 3/3 reject 401 sin firma · 7 evidence captures 7d
+- **Audit log**: 19 event_types · 5 paths instrumented · activity_log fenix.activity_log
+
+## Repository map
+
+| Repository | Purpose | Visibility |
+|---|---|---|
+| `raxar-platform` | FENIX dashboard + apps + packages monorepo | Private |
+| `raxar-web` | Corporate website Next.js | Private |
+| `raxar-cluster` | Sebas territory · Python cluster + partner backends | Private |
+| `raxar-infra` | IaC · runbooks · scripts · docker compose | Private |
+| `raxar-docs` | Internal documentation + KNOWLEDGE/ + planning | Private |
+
+## Team
+
+- **Jose** — Founder · CEO · Production owner
+- **Sebas** — Develop lead · Cluster + partner backends
+- **Jaime** — Admin role · core team
+
+## Contact
+
+- 📧 [contacto@raxar.es](mailto:contacto@raxar.es) — General inquiries
+- 📧 [jose@raxar.es](mailto:jose@raxar.es) — Founder direct
+- 📧 [dpo@raxar.es](mailto:dpo@raxar.es) — Data protection officer (GDPR DSR)
+- 🌐 [raxar.es](https://raxar.es) — Website
+- 💼 [Pricing & Quotes](https://raxar.es/contacto?intent=presupuesto)
+
+---
+
+*🤖 RAXAR is an AI-first company. This README, our infrastructure, and parts of our platform are co-engineered with AI agents under human supervision. We dogfood our own stack.*
