@@ -4,11 +4,13 @@
 
 Algeciras, España · [raxar.es](https://raxar.es) · [contacto@raxar.es](mailto:contacto@raxar.es)
 
+🚀 **2026-05-05**: First enterprise client signed in Algeciras. Real-traffic soak ongoing.
+
 ---
 
 ## What we do
 
-We design and operate **autonomous AI agent platforms** for SMBs and enterprises. We don't sell hours; we sell systems that run themselves.
+We design and operate **autonomous AI agent platforms** for SMBs and enterprises. We don't sell hours; we sell systems that run themselves — production-grade, multi-tenant, GDPR + AI Act compliant from day one.
 
 - 🧠 **FENIX** — AI dashboard + 11 productos (ARIA · Atlas Pro · Hermes · SOLVA · Oracle · Sentinel · Radar · Pulse-CV · 4 partners) live serving real customers.
 - 🤖 **n8n orchestration** — 39 production workflows · 99.99% success rate · errorWorkflow + executionTimeout 100% compliance · multi-tenant RLS-isolated.
@@ -23,7 +25,7 @@ Backend          Node.js 24 · Python 3.12 · FastAPI · LangGraph
 Database         PostgreSQL 16 · 115 fenix tables · 100% RLS coverage
 LLM Router       LiteLLM Proxy · Anthropic · Groq · Gemini · DeepSeek · Together · OpenRouter · Ollama torre
 Vector Store     Qdrant (5 collections · raxar-help-center · oracle · ARIA RAG · Atlas Pro)
-Orchestration    n8n v2.17 · Temporal.io (roadmap)
+Orchestration    n8n v2.17 · LangGraph (piloto) · Temporal.io (S268+)
 Infra            Coolify v4 · Docker · Hostinger VPS · Tailscale mesh
 Compliance       SOC 2 (mindset · vendor S269+) · GDPR · AI Act CV Manager assessment
 ```
@@ -40,11 +42,21 @@ Compliance       SOC 2 (mindset · vendor S269+) · GDPR · AI Act CV Manager as
 
 | Repository | Purpose | Visibility |
 |---|---|---|
+| `.github` | Org-face profile · CI templates · disclosure policy | Public |
 | `raxar-platform` | FENIX dashboard + apps + packages monorepo | Private |
-| `raxar-web` | Corporate website Next.js | Private |
-| `raxar-cluster` | Sebas territory · Python cluster + partner backends | Private |
-| `raxar-infra` | IaC · runbooks · scripts · docker compose | Private |
-| `raxar-docs` | Internal documentation + KNOWLEDGE/ + planning | Private |
+| `raxar-web` | Corporate website Next.js (raxar.es + aurenix.cloud dual 60d) | Private |
+| `raxar-cluster` | Develop team · Python cluster + partner backends | Private |
+| `raxar-infra` | IaC · runbooks · scripts · docker compose · n8n compliance gates | Private |
+| `raxar-docs` | Internal documentation + KNOWLEDGE/ + ADRs + planning | Private |
+
+### Engineering practices
+
+- **Conventional Commits** + linear history (squash-merge enforced)
+- **CODEOWNERS** routing per surface area · ≥1 approval per CI gate
+- **SOC 2 mindset**: every PR labeled with Trust Service Criteria
+- **Compliance hard gates** in CI: TypeScript strict · n8n compliance linter · RLS preserved · LLM Router enforcement · HMAC on public webhooks
+- **Dependabot** weekly multi-ecosystem · auto-merge patch + minor + security
+- **AI co-engineering** under human supervision · Claude Opus 4.7 (1M context) for senior IT agent role
 
 ## Team
 
