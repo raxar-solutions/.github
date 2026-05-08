@@ -43,11 +43,21 @@ Compliance       SOC 2 (mindset · vendor S269+) · GDPR · AI Act CV Manager as
 | Repository | Purpose | Visibility |
 |---|---|---|
 | `.github` | Org-face profile · CI templates · disclosure policy | Public |
-| `raxar-platform` | FENIX dashboard + apps + packages monorepo | Private |
-| `raxar-web` | Corporate website Next.js (raxar.es + aurenix.cloud dual 60d) | Private |
-| `raxar-cluster` | Develop team · Python cluster + partner backends | Private |
+| `raxar-platform` | FENIX dashboard B2B + RAXAR Platform B2C apps monorepo | Private |
+| `raxar-web` | Corporate website Next.js (raxar.es HUB · 4-way split) | Private |
+| `raxar-cluster` | Develop team · Python cluster + partner backends (Bardo · Vizor · Resona · Overture) | Private |
 | `raxar-infra` | IaC · runbooks · scripts · docker compose · n8n compliance gates | Private |
+| `raxar-projects` | Project handoff · informes Markdown→PDF · grandes proyectos Stripe milestones | Private |
 | `raxar-docs` | Internal documentation + KNOWLEDGE/ + ADRs + planning | Private |
+
+### 4-way product portfolio (S272.36 ADR-S272-025)
+
+| Surface | URL | Audience | Container |
+|---|---|---|---|
+| HUB landing | [raxar.es](https://raxar.es) | Marketing + ARIA chat público | `raxar-web` |
+| FENIX App | [dashboard.raxar.es](https://dashboard.raxar.es) | B2B clients · 11 productos · admin | `raxar-dashboard` |
+| RAXAR Platform | [app.raxar.es](https://app.raxar.es) | B2C prosumer creators (post-firma) | `raxar-explore` |
+| **RAXAR Lab** | [**lab.raxar.es**](https://lab.raxar.es) | Playground · blog · periódico · arcade · experimentos | `raxar-lab` |
 
 ### Engineering practices
 
