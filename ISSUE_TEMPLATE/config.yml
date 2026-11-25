@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Soporte cliente / contacto comercial
+    url: https://raxar.es/contacto
+    about: Si eres cliente o quieres contratar RAXAR · usa el formulario público (no abras issue).
+  - name: Vulnerabilidad de seguridad
+    url: mailto:security@raxar.es
+    about: Reportar vulnerabilidades vía email cifrado · NO abrir issue público.
